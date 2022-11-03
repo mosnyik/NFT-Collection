@@ -85,7 +85,8 @@ export default function Home() {
       window.alert("You successfully minted a Crypto Dev NFT!")
     }
     catch(err){
-      console.error(err)
+      console.error(err);
+      window.alert("there was a problem trying to mint your NFT, try again")
     }
   };
 
@@ -122,6 +123,7 @@ export default function Home() {
       await checkIfPresaleStarted();
     }catch(err){
       console.error(err);
+      window.alert("Something went wrong while trying to mint, try again");
     }
   };
 
